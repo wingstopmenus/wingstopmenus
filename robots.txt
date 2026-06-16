@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Block fake/internal search URLs because this site does not have a real search results page
+Disallow: /search
+Disallow: /*?q=
+
+Sitemap: https://wingstopmenus.us/sitemap.xml
