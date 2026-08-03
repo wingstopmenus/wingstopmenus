@@ -520,6 +520,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // INTEGRATION WITH EXISTING FOOTER
 document.addEventListener('DOMContentLoaded', function() {
+    if (document.body.classList.contains('no-visitor-counter')) return;
     const footer = document.querySelector('footer');
     if (!footer) return;
     

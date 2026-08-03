@@ -348,10 +348,18 @@
         gap: 10px;
     }
 }
+/* Compact accordion scoped to the Wings page only. */
+#wings-faq { padding: 28px; }
+#wings-faq .faq-item { padding: 0 !important; margin: 0 0 12px !important; border: 1px solid #e3eee7 !important; border-radius: 12px !important; box-shadow: none !important; transform: none !important; }
+#wings-faq .faq-question { min-height: 0; padding: 18px 20px !important; font-size: 17px !important; line-height: 1.35; }
+#wings-faq .faq-icon { min-width: auto; width: auto; height: auto; border-radius: 0; background: transparent; color: #146a34 !important; box-shadow: none; font-size: 22px !important; }
+#wings-faq .faq-answer { display: block !important; max-height: 0; padding: 0 20px !important; }
+#wings-faq .faq-item.active .faq-answer { max-height: 260px; padding: 0 20px 18px !important; }
+#wings-faq .faq-answer p { padding: 0; }
 </style>
 
 </head>
-<body>
+<body class="wings-page no-visitor-counter">
     <header>
         <div class="container">
             <div class="header-content">
@@ -768,9 +776,9 @@
     <h2 style="text-align: center; margin-bottom: 30px;">❓ WingStop Wings FAQ (Frequently Asked Questions)</h2>
 
     <div class="faq-item">
-        <div class="faq-question" onclick="toggleFAQ(this)" role="button" aria-expanded="false">
+        <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
             What's the difference between Bone-In and Boneless wings at WingStop?
-            <span>▼</span>
+            <span class="faq-icon">+</span>
         </div>
         <div class="faq-answer">
             <p><strong>Bone-In</strong> are traditional chicken wing sections. <strong>Boneless</strong> are made from all-white meat chicken breast, cut into wing-sized pieces and breaded. Both can be tossed in any sauce.</p>
@@ -778,9 +786,9 @@
     </div>
 
     <div class="faq-item">
-        <div class="faq-question" onclick="toggleFAQ(this)" role="button" aria-expanded="false">
+        <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
             What is the most popular WingStop flavor?
-            <span>▼</span>
+            <span class="faq-icon">+</span>
         </div>
         <div class="faq-answer">
             <p>According to sales data, <strong>Lemon Pepper</strong> is the consistent top seller, followed closely by <strong>Original Hot</strong> and <strong>Mango Habanero</strong>.</p>
@@ -788,9 +796,9 @@
     </div>
 
     <div class="faq-item">
-        <div class="faq-question" onclick="toggleFAQ(this)" role="button" aria-expanded="false">
+        <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
             Can I mix flavors in a combo?
-            <span>▼</span>
+            <span class="faq-icon">+</span>
         </div>
         <div class="faq-answer">
             <p>Yes! All combos and group packs allow you to <strong>choose 2 or more flavors</strong>. This is the best way to try new sauces.</p>
@@ -798,9 +806,9 @@
     </div>
 
     <div class="faq-item">
-        <div class="faq-question" onclick="toggleFAQ(this)" role="button" aria-expanded="false">
+        <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
             What are the spiciest wings at WingStop?
-            <span>▼</span>
+            <span class="faq-icon">+</span>
         </div>
         <div class="faq-answer">
             <p>The <strong>Atomic</strong> flavor is officially rated as the hottest (5 flames). <strong>Mango Habanero</strong> is also very hot but has a sweet start.</p>
@@ -808,9 +816,9 @@
     </div>
 
     <div class="faq-item">
-        <div class="faq-question" onclick="toggleFAQ(this)" role="button" aria-expanded="false">
+        <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
             How many wings should I order per person?
-            <span>▼</span>
+            <span class="faq-icon">+</span>
         </div>
         <div class="faq-answer">
             <p>For a meal: 6-8 wings per person. For a party: 3-4 wings per person if you have other food. For large groups, use our <a href="#group-packs">Group Packs</a> guide above.</p>
@@ -912,6 +920,32 @@
 </footer>
 
    <script src="script.js" defer></script>
+   <script>
+   document.addEventListener('DOMContentLoaded', function () {
+       document.querySelectorAll('#wings-faq .faq-question').forEach(function (question) {
+           question.addEventListener('click', function () {
+               var item = this.closest('.faq-item');
+               var wasOpen = item.classList.contains('active');
+               document.querySelectorAll('#wings-faq .faq-item').forEach(function (entry) {
+                   entry.classList.remove('active');
+                   entry.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+                   entry.querySelector('.faq-icon').textContent = '+';
+               });
+               if (!wasOpen) {
+                   item.classList.add('active');
+                   this.setAttribute('aria-expanded', 'true');
+                   this.querySelector('.faq-icon').textContent = '−';
+               }
+           });
+           question.addEventListener('keydown', function (event) {
+               if (event.key === 'Enter' || event.key === ' ') {
+                   event.preventDefault();
+                   this.click();
+               }
+           });
+       });
+   });
+   </script>
 
 </body>
 </html>
