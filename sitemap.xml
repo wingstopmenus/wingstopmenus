@@ -78,6 +78,24 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://wingstopmenus.us/classic-wings-combo.html</loc>
+    <lastmod>2026-08-03T00:00:00+00:00</lastmod>
+    <priority>0.85</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://wingstopmenus.us/boneless-wings-combo.html</loc>
+    <lastmod>2026-08-03T00:00:00+00:00</lastmod>
+    <priority>0.85</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://wingstopmenus.us/crispy-tenders-combo.html</loc>
+    <lastmod>2026-08-03T00:00:00+00:00</lastmod>
+    <priority>0.85</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
     <loc>https://wingstopmenus.us/original-hot-wings.html</loc>
     <lastmod>2026-08-01T00:00:00+00:00</lastmod>
     <priority>0.8</priority>
