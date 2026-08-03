@@ -20,3 +20,17 @@ footer{background:#142019;color:#d8e4dc;padding:44px 0 22px}.footer-content{disp
 .hero-image-wrap{width:min(1000px,calc(100% - 32px));margin:28px auto 0}
 .hero-image-wrap img{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;border-radius:12px;box-shadow:0 8px 25px rgba(5,68,38,.12)}
 @media(max-width:600px){.hero-image-wrap{width:calc(100% - 22px);margin-top:18px}.hero-image-wrap img{border-radius:9px}}
+
+/* Polished content treatment using the site's existing green and orange palette. */
+.article>h2{background:linear-gradient(90deg,#f0f8f3,#fff);border-left:5px solid var(--orange);border-radius:8px;padding:13px 17px;margin-top:38px}
+.article>h2:first-child{margin-top:0}
+.article>p{font-size:1.02rem;color:#35423b}
+.article>ul,.article>ol{background:#fafcfb;border:1px solid var(--line);border-radius:10px;padding:18px 22px 18px 42px;margin:18px 0 26px}
+.article>ul li::marker,.article>ol li::marker{color:var(--orange);font-weight:800}
+.choice-table{border:1px solid var(--line);border-radius:10px;overflow:hidden;box-shadow:0 5px 16px rgba(5,68,38,.06)}
+.choice-table th{background:linear-gradient(135deg,var(--green-dark),var(--green))}
+.answer-box{box-shadow:0 5px 15px rgba(255,122,0,.06)}
+.fact{transition:border-color .2s ease,box-shadow .2s ease}
+.fact:hover{border-color:#9bc8aa;box-shadow:0 5px 15px rgba(5,68,38,.07)}
+details[open]{border-color:#9bc8aa;box-shadow:0 4px 12px rgba(5,68,38,.06)}
+@media(max-width:600px){.article>h2{font-size:1.35rem;padding:11px 13px}.article>ul,.article>ol{padding:15px 17px 15px 36px}.article>p{font-size:1rem}}
