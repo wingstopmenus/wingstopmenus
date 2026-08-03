@@ -1615,7 +1615,6 @@
         // Close it
         answer.style.display = 'none'; // Direct style for reliability
         answer.classList.remove('show');
-        faqItem.classList.remove('active');
         button.setAttribute('aria-expanded', 'false');
         if (icon) icon.textContent = '+';
     } else {
@@ -1631,7 +1630,6 @@
                 otherAnswer.style.display = 'none';
                 otherAnswer.classList.remove('show');
             }
-            otherItem.classList.remove('active');
             if (otherButton) otherButton.setAttribute('aria-expanded', 'false');
             if (otherIcon) otherIcon.textContent = '+';
         });
@@ -1639,7 +1637,6 @@
         // Open it
         answer.style.display = 'block'; // Direct style for reliability
         answer.classList.add('show');
-        faqItem.classList.add('active');
         button.setAttribute('aria-expanded', 'true');
         if (icon) icon.textContent = '−';
     }
