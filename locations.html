@@ -1615,12 +1615,31 @@
         // Close it
         answer.style.display = 'none'; // Direct style for reliability
         answer.classList.remove('show');
+        faqItem.classList.remove('active');
         button.setAttribute('aria-expanded', 'false');
         if (icon) icon.textContent = '+';
     } else {
+        // Accordion behavior: close any previously opened question first
+        document.querySelectorAll('.faq-item').forEach((otherItem) => {
+            if (otherItem === faqItem) return;
+
+            const otherButton = otherItem.querySelector('.faq-question');
+            const otherAnswer = otherItem.querySelector('.faq-answer');
+            const otherIcon = otherButton ? otherButton.querySelector('.toggle-icon') : null;
+
+            if (otherAnswer) {
+                otherAnswer.style.display = 'none';
+                otherAnswer.classList.remove('show');
+            }
+            otherItem.classList.remove('active');
+            if (otherButton) otherButton.setAttribute('aria-expanded', 'false');
+            if (otherIcon) otherIcon.textContent = '+';
+        });
+
         // Open it
         answer.style.display = 'block'; // Direct style for reliability
         answer.classList.add('show');
+        faqItem.classList.add('active');
         button.setAttribute('aria-expanded', 'true');
         if (icon) icon.textContent = '−';
     }
