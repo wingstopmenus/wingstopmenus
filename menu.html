@@ -276,7 +276,7 @@
             <div class="price-row"><div class="price-row-name">Fountain Drink (32 oz)</div><div class="price-row-footer"><div class="price-row-price">$3.29</div><div class="price-row-cal">0‑455 Cal</div></div></div>
             <div class="price-row"><div class="price-row-name">Bottled Water (Dasani)</div><div class="price-row-desc">16.9 oz</div><div class="price-row-footer"><div class="price-row-price">$2.69</div><div class="price-row-cal">0 Cal</div></div></div>
             <div class="price-row"><div class="price-row-name">Simply Lemonade</div><div class="price-row-desc">52 oz shareable bottle</div><div class="price-row-footer"><div class="price-row-price">$4.99</div><div class="price-row-cal">390 Cal</div></div></div>
-            <div class="price-row"><div class="price-row-name">Triple Chocolate Chunk Brownie</div><div class="price-row-footer"><div class="price-row-price">$2.49</div><div class="price-row-cal">430 Cal</div></div></div>
+            <a class="price-row menu-post-card" href="triple-chocolate-chunk-brownie.html" aria-label="Read the Triple Chocolate Chunk Brownie guide"><div class="price-row-name">Triple Chocolate Chunk Brownie</div><div class="price-row-footer"><div class="price-row-price">$2.49</div><div class="price-row-cal">430 Cal</div></div></a>
         </div>
     </div>
 </div>
@@ -419,6 +419,16 @@
     background: var(--white);
     transition: background 0.3s ease, transform 0.3s ease;
     position: relative;
+}
+
+.menu-post-card {
+    color: inherit;
+    text-decoration: none;
+}
+
+.menu-post-card:focus-visible {
+    outline: 3px solid var(--yellow);
+    outline-offset: -3px;
 }
 
 .price-row:last-child {
