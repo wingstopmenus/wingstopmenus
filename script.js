@@ -520,7 +520,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // INTEGRATION WITH EXISTING FOOTER
 document.addEventListener('DOMContentLoaded', function() {
-    if (document.body.classList.contains('no-visitor-counter')) return;
+    const currentPath = window.location.pathname.replace(/\/+$/, '') || '/';
+    const isHomepage = currentPath === '/' || currentPath === '/index.html';
+    if (!isHomepage) return;
     const footer = document.querySelector('footer');
     if (!footer) return;
     
