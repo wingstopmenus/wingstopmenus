@@ -1444,7 +1444,7 @@ footer {
 
 /* Focused editorial layout for the Wingstop combo guide. Header and footer remain shared. */
 .combo-editorial-page .article-page{padding:34px 18px 72px;background:#fff}
-.combo-editorial-page .article-page article.container{max-width:760px;padding:0;margin-inline:auto}
+.combo-editorial-page .article-page article.container{max-width:920px;padding:0;margin-inline:auto}
 .combo-editorial-page .article-crumb{margin-bottom:22px}
 .combo-editorial-page .article-page h1{max-width:720px;font-size:clamp(2.25rem,5vw,3.25rem);line-height:1.06;letter-spacing:-.035em;margin:10px 0 14px}
 .combo-editorial-page .article-byline{padding-bottom:18px;border-bottom:1px solid #e5e5e5;margin-bottom:26px}
