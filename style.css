@@ -1,6 +1,8 @@
 /* =========================================
    1. RESET & GLOBAL STYLES
    ========================================= */
+.article-byline span+span:before{content:"\2022"}.key-takeaways{margin:28px 0;padding:22px 24px;background:#fff7e8;border:1px solid #ecd6aa;border-radius:8px}.key-takeaways h2{margin:0 0 12px;font-size:1.35rem}.key-takeaways ul{margin:0;padding-left:22px}.key-takeaways li{margin:0 0 8px}
+
 * {
     margin: 0;
     padding: 0;
