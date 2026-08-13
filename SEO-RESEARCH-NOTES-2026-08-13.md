@@ -21,7 +21,7 @@ Internal record for the five ordering guides updated on August 13, 2026. This fi
 
 ## Authorship decision
 
-The site owner directly supplied and authorized the public co-author bylines Muhammad Asad and Saim. No separate fact-checker or editor with a verified identity and review record exists for these pages, so no additional reviewer attribution is published. Third-party writers were not attributed because they did not create or review these pages.
+The site owner directly supplied and authorized Muhammad Asad and Saim as article authors. Each article carries one author: Muhammad Asad is credited on the combos, fries and first-order guides; Saim is credited on the catering and dips guides. No separate fact-checker or editor with a verified identity and review record exists for these pages, so no additional reviewer attribution is published. Third-party writers were not attributed because they did not create or review these pages.
 
 ## Competitor presentation review
 
