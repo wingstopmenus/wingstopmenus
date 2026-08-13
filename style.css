@@ -1462,6 +1462,7 @@ footer {
 .combo-editorial-page .key-takeaways h2{font-size:1.4rem;margin:0 0 13px}
 .combo-editorial-page .wingstop-image-section{padding:0;background:transparent;margin:30px 0 34px;text-align:left}
 .combo-editorial-page .wingstop-image-section .wingstop-image{display:block;width:100%;height:auto;max-width:none;border-radius:2px}
+.combo-editorial-page .portrait-article-image{max-width:560px;margin-left:auto;margin-right:auto}
 .combo-editorial-page .image-caption{display:block;margin-top:8px;color:#666;font-size:.86rem;line-height:1.45;font-style:normal;text-align:left}
 .combo-editorial-page .article-table{margin:22px 0 28px}
 .combo-editorial-page .article-table th,.combo-editorial-page .article-table td{font-size:.96rem;line-height:1.5;padding:11px 12px}
