@@ -1446,7 +1446,7 @@ footer {
 .combo-editorial-page .article-page{padding:34px 18px 34px;background:#fff}
 .combo-editorial-page .article-page article.container{max-width:920px;padding:0;margin-inline:auto}
 .combo-editorial-page .article-crumb{margin-bottom:22px}
-.combo-editorial-page .article-page h1{max-width:720px;font-size:clamp(2.25rem,5vw,3.25rem);line-height:1.06;letter-spacing:-.035em;margin:10px 0 14px}
+.combo-editorial-page .article-page h1{font-size:clamp(2.25rem,5vw,3.25rem);line-height:1.06;letter-spacing:-.035em;margin:10px 0 14px}
 .combo-editorial-page .article-byline{padding-bottom:18px;border-bottom:1px solid #e5e5e5;margin-bottom:26px}
 .combo-editorial-page .article-lead{font-size:1.18rem;line-height:1.72;color:#333;margin:22px 0}
 .combo-editorial-page .article-page p{margin:0 0 1.15rem}
