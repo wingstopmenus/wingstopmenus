@@ -102,6 +102,39 @@
 </div>
 
 <div class="container">
+    <!-- ==============================
+     RESPONSIVE AD CONTAINER
+================================= -->
+        <div class="ads-section">
+<!-- AD BLOCK: WINGS -->
+<div id="ws-ad-wings" class="wingstop-ad-wrapper">
+    <div class="wingstop-ad-inner">
+        <div class="wingstop-ad-loading">Loading Ad...</div>
+    </div>
+</div>
+<script>
+(function() {
+    var container = document.querySelector("#ws-ad-wings .wingstop-ad-inner");
+    if (!container) return;
+
+    var isDesktop = window.innerWidth >= 768;
+    var key = isDesktop ? "3e307d639af2a2b2b23b7a4b5a552f10" : "233c8bf70d9ed6922ab1ca7b83cd7caa";
+    var w = isDesktop ? 728 : 300;
+    var h = isDesktop ? 90 : 250;
+
+    container.innerHTML = ''; 
+    var iframe = document.createElement('iframe');
+    iframe.width = w; iframe.height = h;
+    iframe.style.border = 'none'; iframe.style.overflow = 'hidden';
+    container.appendChild(iframe);
+
+    var doc = iframe.contentWindow.document;
+    doc.open();
+    doc.write('<html><body style="margin:0;padding:0;"><script>window.atOptions = { "key": "'+key+'", "format": "iframe", "height": '+h+', "width": '+w+', "params": {} };<\/script><script src="https://www.highperformanceformat.com/' + key + '/invoke.js"><\/script></body></html>');
+    doc.close();
+})();
+</script>
+</div>
     <div class="wingstop-image-section">
         <img src="https://wingstopmenus.us/img/wingstop-menu-prices.jpg" alt="WingStop Full Menu 2026 with updated prices" class="wingstop-image" loading="lazy">
         <p class="image-caption">✅ Complete WingStop Menu 2026 — wings, tenders, sandwiches, sides and dips with accurate pricing & nutrition</p>
