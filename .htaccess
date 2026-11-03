@@ -1,0 +1,18 @@
+# wingstopmenus.us - redirects and security headers (2026-11-03)
+<IfModule mod_rewrite.c>
+RewriteEngine On
+# http -> https and www -> non-www in one hop
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} ^www\.wingstopmenus\.us$ [NC]
+RewriteRule ^(.*)$ https://wingstopmenus.us/$1 [R=301,L]
+# /index.html -> /
+RewriteRule ^index\.html$ / [R=301,L]
+# Deleted internal/junk files -> 410 Gone (.md notes, .php stubs)
+RewriteRule \.(md|php)$ - [R=410,L]
+</IfModule>
+<IfModule mod_headers.c>
+Header set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+Header set X-Content-Type-Options "nosniff"
+Header set Referrer-Policy "strict-origin-when-cross-origin"
+Header set X-Frame-Options "SAMEORIGIN"
+</IfModule>
