@@ -73,7 +73,13 @@ header {
 nav ul {
     display: flex;
     list-style: none;
-    gap: 30px;
+    gap: 20px;
+}
+/* Narrow desktop (992-1155px): keep the 10-link header on one line */
+@media (max-width: 1155px) and (min-width: 992px) {
+    nav ul { gap: 10px; }
+    nav a { font-size: 14px; white-space: nowrap; }
+    .logo { font-size: 1.4rem; white-space: nowrap; }
 }
 
 nav a {
