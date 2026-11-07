@@ -100,7 +100,7 @@
     "https://wingstopmenus.us/img/wingstop-calories.webp"
   ],
   "datePublished": "2025-12-15T09:00:00+00:00",
-  "dateModified": "2026-11-07T05:13:10+00:00",
+  "dateModified": "2026-11-07T05:49:35+00:00",
   "author": {
     "@type": "Organization",
     "name": "WingStop Menus",
@@ -312,12 +312,19 @@
         
         .comparison-table {
             width: 100%;
+            min-width: 600px;
             border-collapse: collapse;
-            margin: 40px 0;
+            margin: 0;
             background: white;
             border-radius: 10px;
             overflow: hidden;
             box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .table-scroll {
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            margin: 40px 0;
         }
         
         .comparison-table th {
@@ -445,6 +452,16 @@
             
             .calories-hero {
                 padding: 60px 15px;
+            }
+
+            .table-scroll {
+                margin: 20px 0;
+            }
+
+            .comparison-table th,
+            .comparison-table td {
+                padding: 10px 8px;
+                font-size: 14px;
             }
         }
         
@@ -1491,6 +1508,7 @@
 
         <!-- Detailed Calorie Table -->
         <h2>📋 Complete WingStop Calorie Chart (2026)</h2>
+        <div class="table-scroll">
         <table class="comparison-table">
             <thead>
                 <tr>
@@ -1575,6 +1593,7 @@
                 </tr>
             </tbody>
         </table>
+        </div>
 
         <!-- Low Calorie & Diet Tips -->
         <div class="warning-box" style="background: #e8f5e9; border-left-color: #2e7d32;">
@@ -1712,7 +1731,7 @@
                     <li>📧 Menu Database: USA 2026</li>
                     <li>🍗 14 Wing Flavors</li>
                     <li>💰 Price Range: $1.49-$149.99</li>
-                    <li>✅ Updated: 7 November 2026, 05:13 UTC</li>
+                    <li>✅ Updated: 7 November 2026, 05:49 UTC</li>
                 </ul>
             </div>
         </div>
