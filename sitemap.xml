@@ -34,7 +34,7 @@
   </url>
 <url>
     <loc>https://wingstopmenus.us/flavors.html</loc>
-    <lastmod>2026-11-04T08:00:00+00:00</lastmod>
+    <lastmod>2026-11-07T04:58:56+00:00</lastmod>
     <priority>0.9</priority>
   </url>
 <url>
@@ -44,7 +44,7 @@
   </url>
 <url>
     <loc>https://wingstopmenus.us/deals.html</loc>
-    <lastmod>2026-11-03T09:43:00+00:00</lastmod>
+    <lastmod>2026-11-07T05:01:36+00:00</lastmod>
     <priority>0.9</priority>
   </url>
 <url>
@@ -269,7 +269,7 @@
   </url>
   <url>
     <loc>https://wingstopmenus.us/wingstop-chicken-sandwich.html</loc>
-    <lastmod>2026-11-03T19:43:00+00:00</lastmod>
+    <lastmod>2026-11-07T05:01:35+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
@@ -325,6 +325,18 @@
   <url>
     <loc>https://wingstopmenus.us/wingstop-veggie-sticks.html</loc>
     <lastmod>2026-11-03T22:30:00+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://wingstopmenus.us/sour-patch-kids-wicked-punch.html</loc>
+    <lastmod>2026-11-07T04:56:54+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+<url>
+    <loc>https://wingstopmenus.us/free-chicken-sandwich-november-2026.html</loc>
+    <lastmod>2026-11-07T05:01:08+00:00</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 </urlset>
